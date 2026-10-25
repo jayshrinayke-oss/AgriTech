@@ -1,0 +1,2469 @@
+
+/* =========================
+   GLOBAL APP STYLES
+========================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #176b35;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #d5f5d9;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #176b35;
+  font-weight: 600;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: 450px;
+  padding: 75px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background:
+    linear-gradient(rgba(10, 45, 18, 0.55), rgba(10, 45, 18, 0.55)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80")
+    center / cover no-repeat;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  color: #a8e6a8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4.5vw, 55px);
+  line-height: 1.2;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+.hero h1 span {
+  color: #a9e6a5;
+}
+
+.hero-text {
+  max-width: 560px;
+  color: #edf6ed;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.hero-buttons button {
+  padding: 13px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background: #18a957;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero-buttons .secondary-btn {
+  color: #ffffff;
+  background: transparent;
+}
+
+.hero-visual {
+  width: 270px;
+  min-width: 240px;
+  padding: 30px 22px;
+  border: 1px solid #ffffff55;
+  border-radius: 16px;
+  background: #ffffff1c;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.plant {
+  font-size: 85px;
+  margin-bottom: 10px;
+}
+
+.hero-visual h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.hero-visual p {
+  font-size: 13px;
+  color: #e3f4e4;
+}
+
+.growth-stats {
+  display: grid;
+  gap: 10px;
+  margin-top: 23px;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading > p {
+  color: #278443;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: clamp(25px, 3vw, 35px);
+  margin-bottom: 12px;
+}
+
+.section-heading > span {
+  color: #68766b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  padding: 45px 7%;
+  background: #f3f4f6;
+}
+
+.about-section .section-heading {
+  margin-bottom: 28px;
+}
+
+.about-section .section-heading > p {
+  color: #159447;
+}
+
+.about-section .section-heading h2 {
+  color: #171c2b;
+}
+
+.about-section .section-heading > span {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #7b8494;
+}
+
+.about-section .about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+.about-section .about-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  min-height: 130px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-section .about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .about-card .feature-icon {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #18bd63;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 19px;
+}
+
+.about-section .about-card h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #176b35;
+}
+
+.about-section .about-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #697386;
+}
+
+/* ABOUT STATISTICS */
+
+.about-section .about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.about-section .stat-card {
+  padding: 18px 10px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-section .stat-card h2 {
+  margin: 0 0 8px;
+  color: #18a957;
+  font-size: 24px;
+}
+
+.about-section .stat-card p {
+  margin: 0;
+  font-size: 12px;
+  color: #202536;
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+  padding: 75px 8%;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feature-card {
+  padding: 28px 24px;
+  background: #ffffff;
+  border: 1px solid #e6eee6;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px #21472b0a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px #21472b16;
+}
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #e8f6e9;
+  font-size: 27px;
+  margin-bottom: 19px;
+}
+
+.feature-card h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #6b786e;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================
+   WEATHER SECTION
+========================= */
+
+.weather-section {
+  margin: 0 8% 70px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-radius: 16px;
+  background: #e5f4e6;
+}
+
+.weather-section .tagline {
+  color: #278443;
+}
+
+.weather-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.weather-section p:not(.tagline) {
+  color: #5f7163;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.weather-section button {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  background: #278443;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+
+/* What Our Clients Say */
+.testimonials {
+  background: #245c3a;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.testimonial-card p {
+  color: #52645a;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  color: #245c3a;
+}
+
+@media (max-width: 650px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 35px 8%;
+  text-align: center;
+  
+background: #2e7d32;
+color: white;
+
+
+
+}
+
+footer h2 {
+  color: #a9e6a5;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+footer span {
+  color: #c7d8ca;
+  font-size: 12px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 5%;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-links span {
+  color: inherit;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 850px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .feature-grid,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .weather-section {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 50px 6%;
+  }
+
+  .hero-visual {
+    min-width: 0;
+  }
+
+  .about-section {
+    padding: 30px 5%;
+  }
+
+  .about-section .about-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-section .about-card {
+    min-height: 110px;
+  }
+
+  .about-section .about-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .features,
+  .testimonials {
+    padding: 55px 6%;
+  }
+
+  .feature-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-section {
+    margin: 0 6% 45px;
+    padding: 25px;
+    flex-direction: column;
+  }
+}
+
+/* Our Services */
+.services-section {
+  padding: 60px 20px;
+}
+
+.services-section .section-heading {
+  margin-bottom: 30px;
+}
+
+.services-section .feature-grid {
+  
+grid-template-columns: repeat(3, minmax(0, 400px));
+
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-section .feature-card {
+  width: 100%;
+  padding: 20px;
+  min-width: 0;
+}
+
+/* Our Features */
+.features {
+  background: #245c3a;
+  padding: 60px 8%;
+}
+
+.features .section-heading h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Separate Login Page */
+.login-screen {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #183b2b;
+}
+
+/* Login Page Navbar */
+.login-navbar {
+  min-height: 76px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #176b35;
+  color: white;
+}
+
+.login-navbar h2 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.login-navbar > div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.login-nav-button {
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-nav-button:hover,
+.login-nav-button.active {
+  color: #c5f3ce;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Login Background */
+.login-main {
+  min-height: calc(100vh - 76px);
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7faf5;
+}
+
+/* Green Login Box */
+.login-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 850px;
+  background: #48dc83;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Left Side */
+.login-form {
+  min-width: 0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #101820;
+}
+
+.login-form h1 {
+  margin: 0 0 24px;
+  font-size: clamp(23px, 2.5vw, 30px);
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form label {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d2dce9;
+  border-radius: 7px;
+  outline: none;
+  background: #e8efff;
+  color: #172033;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  border-color: #176b35;
+  box-shadow: 0 0 0 2px rgba(23, 107, 53, 0.12);
+}
+
+/* Pink Log In Button */
+.login-form .submit-login {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9e9e;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-form .submit-login:hover {
+  background: #f57f8b;
+}
+
+/* Signup Link */
+.login-form .signup-text {
+  margin-top: 17px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.login-form .signup-link {
+  padding: 0 3px;
+  border: none;
+  background: transparent;
+  color: #a64b36;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.login-form .signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Wheat Image Right Side */
+.login-image {
+  min-width: 0;
+  min-height: 390px;
+  padding: 20px 20px 20px 0;
+}
+
+.login-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .login-navbar {
+    padding: 15px 5%;
+  }
+
+  .login-navbar > div {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .login-nav-button {
+    font-size: 12px;
+  }
+
+  .login-main {
+    padding: 25px 12px;
+  }
+
+  .login-card {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .login-form {
+    padding: 25px 22px;
+  }
+
+  .login-image {
+    min-height: 180px;
+    height: 180px;
+    padding: 0 22px 22px;
+  }
+
+  .login-image img {
+    min-height: 158px;
+    height: 158px;
+  }
+}
+
+/* Agricultural Information Page */
+
+.agri-page {
+  min-height: 100vh;
+  background: #f4f8f4;
+  color: #263528;
+  padding-bottom: 40px;
+}
+
+.agri-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 7%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.agri-navbar h2 {
+  color: #2e7d32;
+}
+
+.agri-navbar button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.forecast-section,
+.crop-section {
+  width: 86%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+.forecast-section {
+  padding: 30px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.forecast-section h1,
+.crop-section h2 {
+  margin-bottom: 12px;
+  color: #2e7d32;
+}
+
+.forecast-section p {
+  line-height: 1.7;
+}
+
+.crop-section input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px;
+  margin: 15px 0 25px;
+  border: 1px solid #cbd5cb;
+  border-radius: 8px;
+  outline-color: #2e7d32;
+}
+
+.crop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.crop-card {
+  padding: 22px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.crop-card:hover {
+  transform: translateY(-5px);
+}
+
+.crop-card h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.crop-card p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.crop-card button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .agri-navbar {
+    padding: 15px 5%;
+  }
+
+  .forecast-section,
+  .crop-section {
+    width: 92%;
+  }
+
+  .forecast-section {
+    padding: 20px;
+  }
+}
+
+/* ===== WEATHER PAGE ONLY ===== */
+.agri-page {
+  min-height: 100vh;
+  background: #dcfce7;
+  color: #365b43;
+  font-family: Arial, sans-serif;
+}
+
+/* Weather page navbar */
+.agri-page .agri-navbar {
+  min-height: 72px;
+  padding: 14px 5%;
+  background: #15803d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.agri-page .agri-navbar h2 {
+  margin: 0;
+  color: white;
+  font-size: 26px;
+}
+
+.agri-page .agri-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.agri-page .agri-nav-links button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.agri-page .agri-nav-links button:hover {
+  background: #166534;
+}
+
+/* Weather heading and search */
+.agri-page .forecast-section {
+  padding: 38px 20px 42px;
+  text-align: center;
+  background: #dcfce7;
+}
+
+.agri-page .forecast-section > h1 {
+  margin: 0 0 12px;
+  color: #15803d;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.agri-page .current-location {
+  margin: 12px 0 22px;
+  color: #276749;
+  font-size: 18px;
+}
+
+.agri-page .weather-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: min(100%, 500px);
+  margin: 0 auto 30px;
+}
+
+.agri-page .weather-search input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid #86efac;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.agri-page .weather-search button {
+  min-width: 105px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.agri-page .weather-search button:hover {
+  background: #15803d;
+}
+
+/* White weather details card */
+.agri-page .weather-card {
+  width: min(100%, 900px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #d1fae5;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(22, 101, 52, 0.12);
+  text-align: left;
+}
+
+.agri-page .weather-card-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.agri-page .weather-card-heading h2 {
+  margin: 0 0 8px;
+  color: #166534;
+  font-size: 28px;
+}
+
+.agri-page .weather-card-heading p {
+  margin: 0;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.agri-page .weather-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.agri-page .weather-metric {
+  padding: 20px;
+  min-height: 95px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.agri-page .weather-metric span {
+  color: #398457;
+  font-size: 16px;
+}
+
+.agri-page .weather-metric strong {
+  color: #166534;
+  font-size: 25px;
+}
+
+.agri-page .weather-note {
+  margin: 20px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Agricultural Information and crop cards */
+.agri-page .crop-section {
+  padding: 35px 4% 50px;
+  background: #86efac;
+}
+
+.agri-page .crop-section > h1 {
+  margin: 0 0 30px;
+  color: #166534;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.agri-page .crop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.agri-page .crop-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(22, 101, 52, 0.15);
+  text-align: center;
+}
+
+.agri-page .crop-card img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.agri-page .crop-card-content {
+  padding: 18px 15px 22px;
+}
+
+.agri-page .crop-card-content h2 {
+  margin: 0 0 18px;
+  color: #276749;
+  font-size: 25px;
+}
+
+.agri-page .crop-card-content button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.agri-page .crop-card-content button:hover {
+  background: #bbf7d0;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+  .agri-page .agri-navbar {
+    justify-content: center;
+  }
+
+  .agri-page .agri-nav-links {
+    justify-content: center;
+  }
+
+  .agri-page .crop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .agri-page .forecast-section > h1,
+  .agri-page .crop-section > h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .agri-page .crop-grid,
+  .agri-page .weather-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .agri-page .weather-search {
+    flex-direction: column;
+  }
+
+  .agri-page .weather-search button {
+    min-height: 45px;
+  }
+
+  .agri-page .weather-card {
+    padding: 17px;
+  }
+
+  .agri-page .crop-card img {
+    height: 220px;
+  }
+}
+
+/* ===== CROP DETAILS PAGE LAYOUT ===== */
+.crop-details-page {
+  min-height: 100vh;
+  padding: 35px 5%;
+  box-sizing: border-box;
+  background: #dcfce7;
+  color: #365b43;
+}
+
+.crop-details-page .crop-details-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(22, 101, 52, 0.12);
+}
+
+.crop-details-page h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  color: #15803d;
+  font-size: 38px;
+}
+
+.crop-details-page .crop-scientific-name {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.crop-details-page .crop-details-image {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.crop-details-page .crop-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.crop-details-page .crop-info-item {
+  padding: 18px 20px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  border-radius: 12px;
+}
+
+.crop-details-page .crop-info-item h3 {
+  margin: 0 0 8px;
+  color: #15803d;
+  font-size: 17px;
+}
+
+.crop-details-page .crop-info-item p {
+  margin: 0;
+  color: #374151;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.crop-details-page .crop-treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.crop-details-page .pesticides-panel,
+.crop-details-page .fertilizers-panel {
+  padding: 22px;
+  border-radius: 13px;
+  color: #1f2937;
+}
+
+.crop-details-page .pesticides-panel {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+}
+
+.crop-details-page .fertilizers-panel {
+  background: #dbeafe;
+  border: 1px solid #93c5fd;
+}
+
+.crop-details-page .pesticides-panel h2 {
+  color: #b91c1c;
+}
+
+.crop-details-page .fertilizers-panel h2 {
+  color: #1d4ed8;
+}
+
+.crop-details-page .crop-treatment-grid h2 {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.crop-details-page .crop-treatment-grid li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.crop-details-page .crop-back-button {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 11px 22px;
+  background: #15803d;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.crop-details-page .crop-back-button:hover {
+  background: #166534;
+}
+
+@media (max-width: 650px) {
+  .crop-details-page {
+    padding: 18px 12px;
+  }
+
+  .crop-details-page .crop-details-container {
+    padding: 18px;
+  }
+
+  .crop-details-page h1 {
+    font-size: 29px;
+  }
+
+  .crop-details-page .crop-details-image {
+    height: 220px;
+  }
+
+  .crop-details-page .crop-info-grid,
+  .crop-details-page .crop-treatment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* NEW: Products List page */
+.products-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.products-page > h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #246b35;
+}
+
+.products-subtitle {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #666;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.product-card > img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card-content {
+  padding: 20px;
+}
+
+.product-card-content h2 {
+  margin: 0 0 8px;
+}
+
+.product-category {
+  color: #39804a;
+  font-size: 14px;
+}
+
+.product-card-content h3 {
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.product-card-content p {
+  line-height: 1.5;
+}
+
+.buy-now-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background: #27833c;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buy-now-button:hover {
+  background: #1d672f;
+}
+
+/* NEW: Booking form */
+.booking-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 35px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f3f6f2;
+}
+
+.booking-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card > h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #246b35;
+}
+
+.back-to-products {
+  border: none;
+  background: transparent;
+  color: #246b35;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.booking-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+  padding: 12px;
+  background: #f6f8f5;
+  border-radius: 9px;
+}
+
+.booking-product img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.booking-product h2 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.booking-product p {
+  margin: 0;
+  color: #666;
+}
+
+.booking-card form > label {
+  display: block;
+  margin: 14px 0 7px;
+  font-weight: 600;
+}
+
+.booking-card form > input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d2d8d0;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.quantity-row,
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.quantity-controls button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+  background: #e7eee6;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.price-row {
+  margin-top: 16px;
+}
+
+.total-row {
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  font-size: 19px;
+}
+
+.book-button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background: #1674d1;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background: #105eae;
+}
+
+@media (max-width: 750px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-page {
+    padding: 28px 16px;
+  }
+
+  .booking-card {
+    padding: 20px;
+  }
+}
+
+/* Booking box ki length chhoti */
+.booking-card {
+  max-width: 400px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form ke input boxes */
+.booking-card input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Product image chhoti */
+.booking-product img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Mobile par bhi sahi rahe */
+@media (max-width: 500px) {
+  .booking-card {
+    width: 94%;
+    padding: 15px;
+  }
+}
+
+.booking-card {
+  min-height: auto;
+  height: auto;
+  padding: 15px 20px;
+  margin: 15px auto;
+  gap: 10px;
+}
+
+.booking-card h2 {
+  margin: 5px 0 10px;
+}
+
+.booking-card p {
+  margin: 5px 0;
+}
+
+.booking-card input {
+  margin-bottom: 8px;
+}
+
+.booking-card {
+  padding: 10px 15px !important;
+  gap: 5px !important;
+}
+
+.booking-card h2 {
+  margin: 2px 0 5px !important;
+  font-size: 18px;
+}
+
+.booking-card p {
+  margin: 2px 0 !important;
+}
+
+.booking-card input {
+  padding: 5px !important;
+  margin-bottom: 4px !important;
+}
+
+.booking-card button {
+  padding: 5px !important;
+}
+
+
+
+/* My Bookings page */
+.bookings-page {
+  padding: 30px 22px;
+  background: #f8f8fa;
+  min-height: 100vh;
+}
+
+.bookings-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.bookings-heading h1 {
+  margin: 0;
+  color: #263746;
+  font-size: 36px;
+}
+
+.add-booking-button {
+  background: #19a653;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking-history-card {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  gap: 18px;
+  align-items: center;
+  background: white;
+  padding: 25px 28px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 7px #00000012;
+}
+
+.booking-history-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.booking-history-card span {
+  color: #77818a;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.booking-history-card strong {
+  color: #111820;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.booking-history-card .booking-status {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 14px;
+  background: #dcfce7;
+  color: #247044;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.booking-history-card .booking-customer {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .booking-history-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bookings-heading h1 {
+    font-size: 26px;
+  }
+}
+
+.farm-options,
+.farm-list-page,
+.farm-form-page {
+  padding: 35px;
+  background: #f7f9f7;
+  min-height: 75vh;
+}
+
+.farm-options h1,
+.farm-form-page h1 {
+  text-align: center;
+  color: #263746;
+  margin-bottom: 30px;
+}
+
+.farm-option-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.farm-option-buttons button,
+.farm-list-heading button,
+.farm-form button {
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.farm-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.farm-list-heading h1 {
+  margin: 0 auto;
+  color: #263746;
+}
+
+.farm-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+.farm-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.farm-table th,
+.farm-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.farm-table th {
+  background: #e8f5ec;
+  color: #245b38;
+}
+
+.farm-table td button {
+  padding: 7px 12px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.farm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #00000010;
+}
+
+.farm-form input {
+  padding: 11px;
+  border: 1px solid #ccd5ce;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .farm-list-page,
+  .farm-form-page {
+    padding: 16px;
+  }
+
+  .farm-list-heading {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+/* Small Farm Registration Form */
+.farm-form-page {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 25px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.farm-form-page h1 {
+  text-align: center;
+  color: #236b35;
+  margin: 0 0 18px;
+  font-size: 22px;
+}
+
+.farm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.farm-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #263b2b;
+  margin-top: 4px;
+}
+
+.farm-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cbd9cc;
+  border-radius: 7px;
+  background: #fbfdfb;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.farm-form input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+}
+
+.farm-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.farm-form-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.farm-register-btn {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.farm-register-btn:hover {
+  background: #1b5e20;
+}
+
+.farm-cancel-btn {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.farm-cancel-btn:hover {
+  background: #d1d5db;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .farm-form-page {
+    max-width: calc(100% - 28px);
+    margin: 18px auto;
+    padding: 16px;
+  }
+
+  .farm-form-page h1 {
+    font-size: 20px;
+  }
+
+  .farm-form-actions button {
+    flex: 1;
+  }
+}
+
+/* ===== Crop Management Page ===== */
+
+.farm-options {
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  margin: 25px auto;
+  padding: 18px 22px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.farm-options h1 {
+  margin: 0 0 6px;
+  color: #236b35;
+  font-size: 22px;
+}
+
+.farm-options p {
+  margin: 0;
+  color: #647067;
+  font-size: 14px;
+}
+
+.farm-option-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.farm-option-buttons button,
+.crop-add-btn {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #2e7d32;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.farm-option-buttons button:hover,
+.crop-add-btn:hover {
+  background: #1b5e20;
+}
+
+/* ===== Crop List ===== */
+
+.farm-list-page {
+  width: calc(100% - 32px);
+  max-width: 1150px;
+  box-sizing: border-box;
+  margin: 25px auto;
+}
+
+.farm-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.farm-list-heading h1 {
+  margin: 0;
+  color: #236b35;
+  font-size: 24px;
+}
+
+.farm-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.farm-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.farm-table th,
+.farm-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.farm-table th {
+  background: #eaf4eb;
+  color: #235d2c;
+  font-weight: 600;
+}
+
+.farm-table td {
+  color: #374151;
+}
+
+.farm-table tbody tr:hover {
+  background: #f7fbf7;
+}
+
+.crop-empty {
+  padding: 22px !important;
+  text-align: center;
+  color: #6b7280 !important;
+}
+
+.crop-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.crop-actions button {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.crop-edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.crop-edit-btn:hover {
+  background: #bfdbfe;
+}
+
+.crop-delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.crop-delete-btn:hover {
+  background: #fecaca;
+}
+
+/* ===== Add Crop Form: Compact Box ===== */
+
+.crop-form-page {
+  width: calc(100% - 28px);
+  max-width: 390px;
+  box-sizing: border-box;
+  margin: 22px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.crop-form-page h1 {
+  margin: 0 0 16px;
+  text-align: center;
+  color: #236b35;
+  font-size: 21px;
+}
+
+.crop-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crop-form label {
+  margin-top: 3px;
+  color: #263b2b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.crop-form input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 9px 10px;
+  border: 1px solid #cbd9cc;
+  border-radius: 6px;
+  background: #fbfdfb;
+  color: #263b2b;
+  font-size: 14px;
+}
+
+.crop-form input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.12);
+}
+
+.crop-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.crop-form-actions button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.crop-save-btn {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.crop-save-btn:hover {
+  background: #1b5e20;
+}
+
+.crop-cancel-btn {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.crop-cancel-btn:hover {
+  background: #d1d5db;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 600px) {
+  .farm-options {
+    padding: 16px;
+  }
+
+  .farm-option-buttons {
+    gap: 8px;
+  }
+
+  .farm-option-buttons button {
+    padding: 9px 11px;
+  }
+
+  .farm-list-page {
+    width: calc(100% - 20px);
+  }
+
+  .farm-list-heading h1 {
+    font-size: 21px;
+  }
+
+  .farm-table th,
+  .farm-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .crop-form-page {
+    padding: 16px;
+  }
+}
+
+/* ===== MY BOOKINGS PAGE ===== */
+
+.bookings-page {
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 30px;
+  background: #f4f8f4;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.bookings-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.bookings-heading h1 {
+  margin: 0;
+  color: #245c32;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.add-booking-button {
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-booking-button:hover {
+  background: #1b5e20;
+}
+
+/* Booking form card */
+
+.booking-form-card {
+  max-width: 760px;
+  margin: 0 auto 35px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e0e9e0;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(30, 80, 40, 0.08);
+  box-sizing: border-box;
+}
+
+.booking-form-card h2 {
+  margin: 0 0 22px;
+  color: #245c32;
+  font-size: 23px;
+}
+
+.booking-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-form-card label {
+  margin-top: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.booking-form-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5ded5;
+  border-radius: 7px;
+  background: #fbfdfb;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.booking-form-card input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.booking-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.booking-form-actions button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-form-actions button[type="button"] {
+  background: #e8ece8;
+  color: #333;
+}
+
+.booking-form-actions button[type="submit"] {
+  background: #2e7d32;
+  color: white;
+}
+
+.booking-form-actions button[type="submit"]:hover {
+  background: #1b5e20;
+}
+
+/* Booking history */
+
+.bookings-page > h2 {
+  margin: 30px 0 18px;
+  color: #245c32;
+  font-size: 24px;
+}
+
+.booking-history-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 20px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e0e9e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(30, 80, 40, 0.06);
+  overflow-wrap: anywhere;
+}
+
+.booking-history-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.booking-history-card span {
+  color: #777;
+  font-size: 13px;
+}
+
+.booking-history-card strong {
+  color: #263b2a;
+  font-size: 15px;
+}
+
+.booking-history-card .booking-status {
+  color: #237a35;
+  font-weight: 700;
+}
+
+.booking-history-card .booking-customer {
+  grid-column: 1 / -1;
+  padding-top: 16px;
+  border-top: 1px solid #e8eee8;
+  gap: 8px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+  .bookings-page {
+    margin: 18px 12px;
+    padding: 18px;
+  }
+
+  .bookings-heading h1 {
+    font-size: 25px;
+  }
+
+  .booking-form-card {
+    padding: 20px;
+  }
+
+  .booking-history-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .booking-form-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .booking-history-card {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-history-card .booking-customer {
+    grid-column: auto;
+  }
+
+  .bookings-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
